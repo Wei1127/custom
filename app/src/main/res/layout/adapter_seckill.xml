@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_180"
+
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="@dimen/dp_210">
+
+    <ImageView
+        android:id="@+id/seckll_tu"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@mipmap/u31"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_red_jiage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_100"
+        android:background="@drawable/shaoe_sound_a"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_15"
+        android:text="￥299"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/dp_14"
+        android:textColor="#FF0000"
+        android:layout_marginTop="@dimen/dp_5"
+        android:id="@+id/seckill_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒杀价￥99"
+        app:layout_constraintEnd_toEndOf="@+id/seckll_tu"
+        app:layout_constraintStart_toStartOf="@+id/seckll_tu"
+        app:layout_constraintTop_toBottomOf="@+id/seckll_tu" />
+
+    <TextView
+        android:id="@+id/neirong_tv"
+        android:textColor="#000000"
+        android:textSize="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_0_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="银色星芒刺绣网纱底裤"
+        app:layout_constraintEnd_toEndOf="@+id/seckill_tv_name"
+        app:layout_constraintStart_toStartOf="@+id/seckill_tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/seckill_tv_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

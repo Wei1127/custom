@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="#EEEEEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:src="@mipmap/u87"
+            android:id="@+id/recommend_rv_iv"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recommend_rv_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text="银色星芒刺绣网纱底裤"
+            app:layout_constraintStart_toEndOf="@+id/recommend_rv_iv"
+            app:layout_constraintTop_toTopOf="@+id/recommend_rv_iv" />
+
+        <TextView
+            android:id="@+id/recommend_rv_tv_neirong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="薄如蝉翼，丝滑如肌肤"
+            app:layout_constraintStart_toEndOf="@+id/recommend_rv_iv"
+            app:layout_constraintTop_toBottomOf="@+id/recommend_rv_tv_name" />
+
+        <TextView
+            android:id="@+id/recommend_rv_tv_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="￥99"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintStart_toStartOf="@+id/recommend_rv_tv_neirong"
+            app:layout_constraintTop_toBottomOf="@+id/recommend_rv_tv_neirong" />
+
+        <TextView
+            android:id="@+id/recommend_rv_tv_xuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_xuan"
+            android:padding="@dimen/dp_3"
+            android:text="四选一"
+            android:textColor="#FDAC6C"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="@+id/recommend_rv_tv_jiage"
+            app:layout_constraintEnd_toEndOf="@+id/recommend_rv_tv_neirong"
+            app:layout_constraintTop_toTopOf="@+id/recommend_rv_tv_jiage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
